@@ -1,0 +1,17 @@
+# Mini Exploration: Evolution of Text Representations
+
+## 1. Why are embeddings considered one of the biggest breakthroughs in NLP?
+
+Embeddings are considered one of the biggest breakthroughs in NLP because they allow words to be represented as dense numerical vectors that capture semantic meaning. Earlier methods such as Bag-of-Words and TF-IDF treated words as independent symbols and could not understand relationships between them. Embeddings place similar words close together in a vector space, enabling models to capture semantic and syntactic relationships. For example, words such as "king" and "queen" or "car" and "vehicle" have similar vector representations because they appear in similar contexts. This ability to represent meaning numerically laid the foundation for modern NLP systems.
+
+## 2. How did Word2Vec influence modern language models?
+
+Word2Vec introduced the idea that word meanings can be learned automatically from surrounding context. Instead of manually creating linguistic rules, Word2Vec learned vector representations directly from large text corpora. It demonstrated that semantic relationships could emerge naturally from data, such as:
+
+King − Man + Woman ≈ Queen
+
+This concept of learning representations from context became the foundation for later advances such as GloVe, FastText, ELMo, BERT, GPT, and other transformer-based models. Although modern language models are far more sophisticated, they still rely on the core idea introduced by Word2Vec: learning meaningful representations from contextual information.
+
+## 3. Why do researchers still study classical NLP methods despite the dominance of Transformers?
+
+Researchers continue to study classical NLP methods because they remain valuable in many practical situations. Techniques such as Bag-of-Words, TF-IDF, Word2Vec, and GloVe are computationally efficient, easy to interpret, and require much less data and hardware than transformer models. They often serve as strong baselines for evaluating new methods and can perform surprisingly well on small datasets. Additionally, understanding classical NLP techniques helps researchers understand the historical development of the field and the fundamental principles behind modern language models.

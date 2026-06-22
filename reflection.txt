@@ -1,0 +1,17 @@
+# Reflection on Text Representation Methods
+
+## 1. Which representation method did you find most intuitive and why?
+
+I found Word2Vec to be the most intuitive representation method. Unlike Bag-of-Words and TF-IDF, which represent words as counts or importance scores, Word2Vec learns numerical vectors that capture semantic meaning. Similar words are placed close together in the vector space, making it easier to understand how machines can represent relationships between words. For example, words such as "king" and "queen" or "car" and "vehicle" have similar vector representations because they appear in similar contexts.
+
+## 2. What are the limitations of static embeddings?
+
+Static embeddings such as Word2Vec and GloVe assign only one vector to each word regardless of context. As a result, a word with multiple meanings receives the same representation everywhere. For example, the word "bank" in "river bank" and "bank account" would have the same embedding, even though the meanings are different. Static embeddings also struggle with unseen words and cannot dynamically adapt their representations based on surrounding text.
+
+## 3. How does understanding older NLP techniques help in research and real-world problem solving?
+
+Understanding older NLP techniques provides a strong foundation for understanding modern language models. Methods such as Bag-of-Words, TF-IDF, Word2Vec, and GloVe explain how text can be converted into numerical representations that machine learning algorithms can process. These methods are computationally efficient, interpretable, and often perform well on small datasets. They also help researchers understand the evolution of NLP and provide useful baselines when evaluating more advanced models.
+
+## 4. How might these concepts be useful in Kaggle competitions and hackathons?
+
+These concepts are highly useful in Kaggle competitions and hackathons because they provide fast and effective ways to transform text into machine-learning-ready features. TF-IDF combined with traditional models such as Logistic Regression or SVM often serves as a strong baseline for text classification tasks. Word embeddings can improve performance by capturing semantic relationships between words, while contextual embeddings from transformer models can achieve state-of-the-art results. Understanding all these techniques helps participants choose the right balance between accuracy, computational cost, and development time depending on the competition constraints.

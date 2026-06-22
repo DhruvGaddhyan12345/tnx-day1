@@ -1,0 +1,25 @@
+# Conceptual Questions
+
+## 1. Why is one-hot encoding unsuitable for capturing semantic relationships?
+
+One-hot encoding represents each word as a vector containing a single 1 and all other values as 0. Every word is equally distant from every other word, so semantic relationships cannot be captured. For example, "cat" and "dog" are as different as "cat" and "airplane", even though cat and dog are semantically related.
+
+## 2. Explain the difference between BoW and TF-IDF.
+
+Bag-of-Words represents documents using word frequencies. TF-IDF improves upon this by assigning higher weights to important words and lower weights to very common words. While BoW treats all words equally, TF-IDF highlights words that are more informative for a specific document.
+
+## 3. Why do Word2Vec embeddings perform better than sparse representations?
+
+Word2Vec learns dense vector representations that capture semantic relationships between words. Similar words receive similar vectors because they appear in similar contexts. Sparse representations such as one-hot encoding and BoW cannot capture these relationships and often require much larger feature spaces.
+
+## 4. Differentiate between CBOW and Skip-Gram.
+
+CBOW (Continuous Bag-of-Words) predicts the target word using surrounding context words. Skip-Gram performs the opposite task by using a target word to predict surrounding context words. CBOW is generally faster, while Skip-Gram performs better on rare words and smaller datasets.
+
+## 5. What limitation of Word2Vec motivated contextual embeddings?
+
+Word2Vec produces a single fixed vector for each word regardless of context. Therefore, words with multiple meanings receive the same representation everywhere. Contextual embeddings such as BERT generate different representations depending on the surrounding words, allowing the model to capture different meanings of the same word.
+
+## 6. Explain the Distributional Hypothesis in your own words.
+
+The Distributional Hypothesis states that words appearing in similar contexts tend to have similar meanings. By observing the neighboring words around a target word, a model can learn semantic relationships without being explicitly told the meanings of words.

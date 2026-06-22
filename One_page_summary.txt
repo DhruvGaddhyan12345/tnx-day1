@@ -1,0 +1,19 @@
+# Evolution of NLP Representations: From Bag-of-Words to Contextual Embeddings
+
+Natural Language Processing (NLP) aims to enable computers to understand and process human language. One of the biggest challenges in NLP has been finding effective ways to represent text numerically so that machine learning models can process it.
+
+The earliest representation method was Bag-of-Words (BoW). In BoW, each document is represented using word counts. Although simple and effective for basic tasks, BoW ignores word order, context, and semantic meaning. Words such as "good" and "excellent" are treated as completely unrelated even though they have similar meanings.
+
+To improve upon BoW, researchers introduced TF-IDF (Term Frequency–Inverse Document Frequency). TF-IDF assigns importance scores to words based on how frequently they appear within a document and how rare they are across the entire corpus. This helps reduce the influence of common words and emphasizes more informative terms. However, TF-IDF still cannot capture semantic relationships between words.
+
+The next major breakthrough was Word2Vec. Instead of representing words as sparse vectors, Word2Vec learns dense vector representations called embeddings. These embeddings place semantically similar words close together in vector space. Word2Vec demonstrated that word meaning could be learned from context, making it possible to capture relationships such as:
+
+King − Man + Woman ≈ Queen
+
+GloVe (Global Vectors for Word Representation) further improved word embeddings by combining local context information with global word co-occurrence statistics. While Word2Vec focuses primarily on predicting context, GloVe learns from the overall structure of the corpus.
+
+Despite their success, Word2Vec and GloVe produce static embeddings, meaning each word has only one representation regardless of context. For example, the word "bank" has the same vector in "river bank" and "bank account", even though the meanings differ.
+
+This limitation led to the development of contextual embeddings such as BERT and GPT. These models generate different representations for the same word depending on its surrounding context. Contextual embeddings significantly improved language understanding and became the foundation of modern transformer-based language models.
+
+The evolution from BoW to contextual embeddings reflects a gradual improvement in how machines represent and understand language: moving from simple word counts to sophisticated context-aware representations capable of capturing semantic meaning and linguistic nuances.
